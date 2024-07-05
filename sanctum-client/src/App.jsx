@@ -5,6 +5,10 @@ import { useEffect } from 'react'
 import words from '../../dictionary.json'
 import './App.css'
 
+const port = ":5000"
+const base = `https://localhost${port}`
+const endpoint = "/query"
+
 function randomWord(entries) {
   var arr = Object.keys(entries)
   return arr[Math.floor(Math.random() * arr.length)]
