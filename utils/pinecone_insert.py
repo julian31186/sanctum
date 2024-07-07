@@ -4,7 +4,7 @@ import os
 import json
 
 load_dotenv()
-pc = Pinecone(api_key=os.environ.get("DB_KEY"))
+pc = Pinecone(api_key=os.environ.get("PINCONE_KEY"))
 index = pc.Index("sanctum")
 embeds = "../embeds.json"
 

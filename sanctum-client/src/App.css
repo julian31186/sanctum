@@ -5,6 +5,11 @@
   flex-direction: column;
 }
 
+textarea {
+  padding: 2rem;
+  line-height: 1.5rem;
+}
+
 .header {
   color: black;
   position: fixed;
@@ -13,11 +18,70 @@
   transform: translateX(-50%);
 }
 
-.main {
+.input {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.definition-input {
+  border: 2px solid black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  width: 25rem;
+  height: 20rem;
+  background-color: "#dddddd";
+  font-size: 1rem;
+}
+
+.instructions {
+  top:100%;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.accuracy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem
+}
+
+.actual-definition {
+  display: flex;
+  justify-content: center;
+}
+
+.stream-definition {
+  width: 50%
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+  font-style: italic;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-10px); }
+  20% { transform: translateX(10px); }
+  30% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  60% { transform: translateX(10px); }
+  70% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  90% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
 }
 
 .input-box {
@@ -30,7 +94,7 @@
   font-size: 36px;
   background-color: #dddddd;
   width: 100vw;
-  
+  margin: 10px;
 }
 
 .word {
