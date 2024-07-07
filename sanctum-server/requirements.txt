@@ -1,0 +1,7 @@
+pinecone-client
+openai
+python-dotenv
+flask
+scipy
+flask_cors
+grpcio

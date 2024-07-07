@@ -1,9 +1,11 @@
 from flask import Flask,request, abort, make_response, jsonify
-from pinecone.grpc import PineconeGRPC as Pinecone
 from scipy import spatial
 from flask_cors import CORS
-from openai import OpenAI
 from dotenv import load_dotenv
+
+from pinecone.grpc import PineconeGRPC as Pinecone
+from openai import OpenAI
+
 import json
 import os
 
